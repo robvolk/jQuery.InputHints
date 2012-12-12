@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>jQuery Form Input Hints Plugin Demo</title>
+
+    <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+
+    <script type="text/javascript" src="jquery.inputhints.min.js"></script>
+
+    <style>
+        input.hint
+        {
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('input[title]').inputHints();
+        });
+
+    </script>
+
+</head>
+<body>
+    <h1>
+        jQuery Form Input Hints Plugin Demo</h1>
+    <a href="http://jqueryhints.codeplex.com/">Project Homepage on Codeplex</a> | <a
+        href="http://blog.robvolk.com/2009/01/jquery-form-input-hints.html">Project Blog
+        Post</a>
+    <h2>
+        Example</h2>
+
+    <form>
+    <input type="text" title="Hint Text!" />
+    </form>
+
+    <h2>
+        Usage</h2>
+    <pre>$(document).ready(function() {
+    $('input[title]').inputHints();
+});</pre>
+    <h2>
+        Compatibility</h2>
+
+    <ul>
+        <li>jQuery v1.4.2</li>
+        <li>jQuery v1.3.2</li></ul>
+
+</body>
+</html>
