@@ -1,21 +1,21 @@
 ﻿// jQuery Input Hints plugin
-// Copyright (c) 2009 Rob Volk
-// http://www.robvolk.com
+// Copyright (c) Rob Volk
+// http://robvolk.com
 
 jQuery.fn.inputHints = function () {
     function showHints(el) {
         if ($(el).val() == '')
-            $(el).val($(el).attr('title'))
+            $(el).val($(el).attr('placeholder'))
                 .addClass('hint');
     };
 
     function hideHints(el) {
-        if ($(el).val() == $(el).attr('title'))
+        if ($(el).val() == $(el).attr('placeholder'))
             $(el).val('')
                 .removeClass('hint');
     };
 
-    // hides the input display text stored in the title on focus
+    // hides the input display text stored in the placeholder on focus
     // and sets it on blur if the user hasn't changed it.
 
     var el = $(this);
