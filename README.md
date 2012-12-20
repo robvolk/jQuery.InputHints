@@ -11,6 +11,7 @@ jQuery Plugin Page: http://plugins.jquery.com/project/InputHints
 
 USEAGE
 
+<pre>
 <script type="text/javascript">
 $(function() {
 	// hook up placeholder text on any input with a placeholder attribute
@@ -19,3 +20,4 @@ $(function() {
 </script>
 
 <input type="text" placeholder="Hint Text!" />
+</pre>
