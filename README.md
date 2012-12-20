@@ -11,13 +11,29 @@ jQuery Plugin Page: http://plugins.jquery.com/project/InputHints
 
 USEAGE
 
-<pre>
 <script type="text/javascript">
+<!--
 $(function() {
 	// hook up placeholder text on any input with a placeholder attribute
     $('input[placeholder]').inputHints();
 });
+-->
 </script>
 
 <input type="text" placeholder="Hint Text!" />
+</pre>
+
+<pre>
+&lt;script type="text/javascript"&gt;
+$(function () {
+    // hook up placeholder text on any input with a placeholder attribute
+    <span style="background-color: yellow;">$('input[placeholder]').inputHints();</span>
+});
+&lt;/script&gt;
+
+&lt;style&gt;
+input.hint { color: #888; }
+&lt;/style&gt;
+
+&lt;input type="text" placeholder="Hint Text!" /&gt;
 </pre>
