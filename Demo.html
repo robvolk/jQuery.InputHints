@@ -2,21 +2,27 @@
 <head>
     <title>jQuery Form Input Hints Plugin Demo</title>
 
-    <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
-    <script type="text/javascript" src="jquery.inputhints.min.js"></script>
+    <script type="text/javascript" src="jquery.inputhints.js"></script>
 
     <style>
+        input
+        {
+            height: 32px;
+            padding: 4px 6px;
+            font-size: 14px;
+            line-height: 20px;
+        }
         input.hint
         {
-            font-style: italic;
-            color: #666;
+            color: #888;
         }
     </style>
 
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('input[title]').inputHints();
+        $(function () {
+            $('input[placeholder]').inputHints();
         });
 
     </script>
@@ -25,27 +31,33 @@
 <body>
     <h1>
         jQuery Form Input Hints Plugin Demo</h1>
-    <a href="http://jqueryhints.codeplex.com/">Project Homepage on Codeplex</a> | <a
+    <a href="https://github.com/robvolk/jQuery.InputHints">Github project</a> | <a
         href="http://blog.robvolk.com/2009/01/jquery-form-input-hints.html">Project Blog
         Post</a>
     <h2>
         Example</h2>
 
     <form>
-    <input type="text" title="Hint Text!" />
+    <input type="text" placeholder="Hint Text!" />
     </form>
 
     <h2>
         Usage</h2>
-    <pre>$(document).ready(function() {
-    $('input[title]').inputHints();
-});</pre>
-    <h2>
-        Compatibility</h2>
 
-    <ul>
-        <li>jQuery v1.4.2</li>
-        <li>jQuery v1.3.2</li></ul>
+    <pre>
+&lt;script type="text/javascript"&gt;
+$(function () {
+    // hook up placeholder text on any input with a placeholder attribute
+    <span style="background-color: yellow;">$('input[placeholder]').inputHints();</span>
+});
+&lt;/script&gt;
+
+&lt;style&gt;
+input.hint { color: #888; }
+&lt;/style&gt;
+
+&lt;input type="text" placeholder="Hint Text!" /&gt;
+</pre>
 
 </body>
 </html>
