@@ -1,5 +1,6 @@
 ﻿// jQuery Input Hints plugin
 // Copyright (c) Rob Volk
+// https://github.com/robvolk/jQuery.InputHints
 // http://robvolk.com
 
 jQuery.fn.inputHints = function () {
