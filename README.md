@@ -22,6 +22,10 @@ $(function() {
 -->
 </script>
 
+<style>
+input.hint { color: #888; }
+</style>
+
 <input type="text" placeholder="Hint Text!" />
 </pre>
 
