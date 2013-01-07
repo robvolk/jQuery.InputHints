@@ -1,4 +1,4 @@
-jQuery Input Hints Plugin
+jQuery Form Input Hints Plugin
 =========================
 
 jQuery Form Input Hints plugin automatically displays placeholder text on input textboxes.  Placeholder text is an HTML5 feature that only works well on the latest browsers, except of course, for IE.  This plugin works across all major browsers.
